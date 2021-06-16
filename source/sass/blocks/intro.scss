@@ -1,0 +1,63 @@
+.intro .swiper-container {
+  width: 100%;
+  min-height: 700px;
+}
+
+.intro .swiper-slide {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.intro .swiper-pagination-bullet {
+  opacity: 1;
+  background: $white;
+}
+
+.intro .swiper-pagination-bullet-active {
+  background: $feijoa;
+}
+
+.intro__item {
+  padding-top: 255px;
+}
+
+.intro__item-title {
+  margin-bottom: 15px;
+  font-size: 55px;
+  color: $white;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.intro__item-text {
+  max-width: 520px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: $white;
+  font-weight: 500;
+
+  p + p {
+    margin-top: 10px;
+  }
+}
+
+.intro__item-form {
+  display: flex;
+
+  button {
+    font-weight: 600;
+    padding: 0 30px;
+  }
+
+  input {
+    padding: 0 20px;
+    margin-right: 10px;
+    width: 280px;
+    height: 50px;
+    background-color: $white;
+    border: 1px solid $feijoa;
+    border-radius: 4px;
+  }
+}
