@@ -98,3 +98,25 @@ a {
 section {
   margin-bottom: 85px;
 }
+
+.icon-special {
+  width: 33px;
+  height: 29px;
+  position: relative;
+
+  svg {
+    fill: transparent;
+  }
+
+  span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $nero;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-42%);
+  }
+}

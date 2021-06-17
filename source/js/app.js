@@ -1,8 +1,18 @@
 $(document).ready(function () {
-    const swiper = new Swiper('.mySwiper', {
+    new Swiper('.mySwiper', {
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
+    });
+
+    new Swiper('.ReviewsSwiper', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        slidesPerView: 2,
+        spaceBetween: 15,
     });
 
     $(window).scroll(function(){
