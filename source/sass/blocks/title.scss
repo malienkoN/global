@@ -1,9 +1,12 @@
 .title {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 35px;
   font-weight: 600;
   color: $nero;
-  text-transform: uppercase;
+
+  &--about {
+    margin-bottom: 25px;
+  }
 }
 
 .title-sup {
@@ -19,4 +22,18 @@
   font-size: 18px;
   color: $nero;
   font-weight: 400;
+}
+
+.title-line {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  color: $nero;
+  position: relative;
+
+  svg {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+  }
 }
