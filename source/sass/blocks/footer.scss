@@ -1,0 +1,144 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  font-size: 16px;
+}
+
+.footer__inner {
+  padding-top: 35px;
+  background: url('../img/footer-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.footer__top {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 65px;
+}
+
+.footer__cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+  }
+
+  a {
+    transition: color .2s linear;
+
+    &:hover {
+      color: $feijoa;
+    }
+  }
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  li + li {
+    margin-left: 10px;
+  }
+
+  svg {
+    fill: $white;
+    transition: fill .2s linear;
+
+    &:hover {
+      fill: $feijoa;
+    }
+  }
+}
+
+.footer__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer__address {
+  margin-bottom: 10px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.footer__link {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-form-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer__form {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 15px;
+}
+
+.footer__form-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.footer__form-input {
+  height: 50px;
+  background-color: $white;
+  border: 1px solid $feijoa;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0 20px;
+  color: $black;
+
+  &::placeholder {
+    color: #5A5A5A;
+  }
+}
+
+.footer__form-btn {
+  font-weight: 500;
+  padding: 0 30px;
+}
+
+.footer__copyright {
+  border-top: 1px solid #2d2d2d;
+  padding: 10px 0 35px;
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+  color: #8d8d8d;
+}

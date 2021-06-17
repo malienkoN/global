@@ -22,4 +22,13 @@ $(document).ready(function () {
         if (scroll >= 100) sticky.addClass('header-fixed');
         else sticky.removeClass('header-fixed');
     });
+
+    $('.faq__item-trigger').click(function () {
+        $(this).next('.faq__item-content').slideToggle();
+        $(this).parent().toggleClass('active');
+        const replaceText = $(this).parent().hasClass('active') ? '-' : '+';
+        $(this).find('.icon-special span').text(replaceText);
+    });
+
+    // $('.faq__item-trigger:first').click();
 });

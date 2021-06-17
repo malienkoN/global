@@ -57,12 +57,29 @@
 
 .reviews .swiper-pagination {
   bottom: 0;
+  position: absolute;
+
+  &:after,
+  &:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: $nero;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &:before {
+    content: '01';
+    left: 45%;
+  }
+
+  &:after {
+    content: '03';
+    right: 45%;
+  }
 }
 
 .reviews .swiper-pagination-bullet-active {
   background-color: $feijoa;
-}
-
-.reviews-pagination__wrapper {
-
 }
