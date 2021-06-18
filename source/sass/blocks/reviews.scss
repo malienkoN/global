@@ -83,3 +83,31 @@
 .reviews .swiper-pagination-bullet-active {
   background-color: $feijoa;
 }
+
+@media (max-width: 1279px) {
+  .reviews .swiper-pagination {
+
+    &:before {
+      left: 40%;
+    }
+
+    &:after {
+      right: 40%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews .swiper-pagination {
+
+    &:before {
+      content: '01';
+      left: 30%;
+    }
+
+    &:after {
+      content: '03';
+      right: 30%;
+    }
+  }
+}

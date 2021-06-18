@@ -11,8 +11,20 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-        slidesPerView: 2,
-        spaceBetween: 15,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            768: {
+                slidesPerView: 1.4,
+                spaceBetween: 15,
+            },
+            1279: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+        },
     });
 
     $(window).scroll(function(){

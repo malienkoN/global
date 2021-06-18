@@ -1,6 +1,12 @@
 .doctor {
   display: grid;
   grid-template-columns: 1fr auto;
+  grid-gap: 12px;
+}
+
+.doctor__name {
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .doctor__exp {
@@ -74,10 +80,139 @@
   display: none;
 }
 
+.doctor__img-wrapper .doctor-content-inner {
+  display: none;
+}
+
 .doctor__img {
   max-width: 100%;
   width: 500px;
   min-height: 448px;
   background: url('../img/doctor-img.jpg') no-repeat center;
   background-size: cover;
+}
+
+@media (max-width: 1279px) {
+
+  .doctor__img {
+    margin: 0 0 25px;
+    width: 380px;
+    min-height: 400px;
+  }
+
+  .doctor__content .doctor__link {
+    display: none;
+  }
+
+  .doctor__img-wrapper .doctor__link {
+    display: flex;
+  }
+
+  .doctor__action button:last-of-type {
+    display: none;
+  }
+
+  .doctor__link {
+    margin-bottom: 0;
+
+    a {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .doctor__name {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .doctor__exp {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .doctor__text {
+    margin-bottom: 15px;
+    font-size: 16px;
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .doctor {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .doctor__name {
+    text-align: center;
+  }
+
+  .doctor__img {
+    margin: 0 auto 10px;
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .doctor__content-inner {
+    order: 5;
+  }
+
+  .doctor-content-inner {
+    display: none;
+  }
+
+  .doctor__img-wrapper .doctor-content-inner {
+    display: block;
+  }
+
+  .doctor__link {
+    margin-bottom: 20px;
+
+    a {
+      margin-right: 35px;
+      font-size: 15px;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .doctor__exp {
+    text-align: center;
+  }
+
+  .doctor__text {
+    text-align: center;
+  }
+
+  .doctor__action button:first-of-type {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 399px) {
+  .doctor__link {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      margin-right: 5px;
+    }
+  }
 }

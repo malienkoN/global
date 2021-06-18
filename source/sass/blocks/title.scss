@@ -39,6 +39,10 @@
   .title-sub {
     font-size: 16px;
   }
+
+  .title-line {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -50,5 +54,27 @@
 
   .title-sub {
     text-align: center;
+  }
+
+  .title-line {
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: 18px;
+
+    svg {
+      display: none;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: $feijoa;
+
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+    }
   }
 }
