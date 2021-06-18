@@ -47,3 +47,28 @@
   font-weight: 500;
   padding: 0 30px;
 }
+
+@media (max-width: 1279px) {
+  .consult__form {
+    grid-template-columns: 1fr;
+  }
+
+  .consult__form-inputs {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .consult__form-input {
+    width: 280px;
+    max-width: 100%;
+  }
+
+  .consult__form-btn {
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .consult {
+    padding: 25px 0;
+  }
+}

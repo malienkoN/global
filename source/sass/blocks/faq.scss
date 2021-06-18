@@ -54,4 +54,27 @@
   p:last-of-type {
     margin-bottom: 0;
   }
+
+  ul {
+    margin: 10px 0;
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .faq__inner {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq__item-trigger {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .faq__item-content {
+    padding: 20px 10px;
+  }
 }

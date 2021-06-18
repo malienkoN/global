@@ -115,6 +115,7 @@
 }
 
 .footer__form-input {
+  width: 100%;
   height: 50px;
   background-color: $white;
   border: 1px solid $feijoa;
@@ -130,7 +131,8 @@
 
 .footer__form-btn {
   font-weight: 500;
-  padding: 0 30px;
+  padding: 0;
+  width: 240px;
 }
 
 .footer__copyright {
@@ -141,4 +143,126 @@
 
   font-size: 16px;
   color: #8d8d8d;
+}
+
+.footer__title--mobile {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .footer__col:nth-child(2),
+  .footer__col:nth-child(3) {
+    display: none;
+  }
+
+  .footer__cols {
+    justify-content: space-around;
+  }
+
+  .footer__top {
+    grid-gap: 25px;
+  }
+
+  .footer__form-input:last-of-type {
+    display: none;
+  }
+
+  .footer__form-inputs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__form-btn {
+    font-size: 16px;
+  }
+
+  .footer-form-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .footer__copyright {
+    padding: 10px 0 15px;
+  }
+
+  .footer__copyright a:last-of-type {
+    display: none;
+  }
+
+  .footer__title {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+  }
+
+  .footer__cols {
+    margin-bottom: 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__col + .footer__col {
+    margin-top: 30px;
+  }
+
+  .footer__nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer__title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .footer__col:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__form {
+    margin-bottom: 35px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .footer__form-inputs {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .footer__form-input {
+    width: 240px;
+  }
+
+  .footer__form-btn {
+    margin: 0 auto;
+  }
+
+  .footer-form-title {
+    text-align: center;
+  }
+
+  .footer__copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer {
+    padding-bottom: 45px;
+  }
 }

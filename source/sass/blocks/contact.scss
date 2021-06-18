@@ -1,4 +1,4 @@
-.contact {
+.contact__inner {
   position: relative;
 }
 
@@ -35,6 +35,7 @@
 
 .contact__item-link {
   font-size: 16px;
+  font-weight: 500;
   display: flex;
   align-items: center;
 
@@ -93,4 +94,87 @@
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 500;
+}
+
+.contact__popup-trigger {
+  display: none;
+
+  width: 75px;
+  height: 75px;
+  background-color: $feijoa;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+
+  svg {
+    fill: none;
+  }
+}
+
+@media (max-width: 1399px) {
+  .contact__map {
+    margin: 0 -20px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .contact__map {
+    min-height: 410px;
+  }
+
+  .contact__items {
+    margin-bottom: 10px;
+    position: static;
+    transform: none;
+    display: flex;
+  }
+
+  .contact__item + .contact__item {
+    margin: 0 0 0 15px;
+  }
+
+  .contact__item:nth-child(2),
+  .contact__item:nth-child(3) {
+    display: none;
+  }
+
+  .contact__popup-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__map {
+    min-height: 500px;
+  }
+
+  .contact__map {
+    margin: 0 -10px;
+  }
+
+  .contact .title-sub {
+    display: none;
+  }
+
+  .contact__item:nth-child(4) {
+    display: none;
+  }
+
+  .contact__items {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+
+  .contact__item {
+    min-width: auto;
+  }
+
+  .contact__item-title {
+    display: none;
+  }
 }

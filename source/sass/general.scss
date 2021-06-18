@@ -128,3 +128,23 @@ section {
     transform: translateX(-42%);
   }
 }
+
+.fixed-btn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+
+  width: 100%;
+  height: 45px;
+  background-color: $feijoa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);;
+  font-size: 16px;
+  font-weight: 500;
+  color: $black;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
