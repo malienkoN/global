@@ -19,3 +19,9 @@
     color: $feijoa;
   }
 }
+
+@media (max-width: 1279px) {
+  .nav {
+    display: none;
+  }
+}

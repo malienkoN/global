@@ -1,7 +1,6 @@
 .doctor {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-gap: 70px;
 }
 
 .doctor__exp {
@@ -73,4 +72,12 @@
 
 .doctor__img-wrapper .doctor__link {
   display: none;
+}
+
+.doctor__img {
+  max-width: 100%;
+  width: 500px;
+  min-height: 448px;
+  background: url('../img/doctor-img.jpg') no-repeat center;
+  background-size: cover;
 }

@@ -9,14 +9,6 @@
   }
 }
 
-.title-sup {
-  margin-bottom: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: $nero;
-  text-transform: uppercase;
-}
-
 .title-sub {
   margin-bottom: 25px;
   font-size: 18px;
@@ -36,5 +28,27 @@
     position: absolute;
     bottom: -15px;
     left: 0;
+  }
+}
+
+@media (max-width: 1279px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .title-sub {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .title-sub {
+    text-align: center;
   }
 }

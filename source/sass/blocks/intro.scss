@@ -20,7 +20,11 @@
 }
 
 .intro__item {
-  padding-top: 255px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  justify-content: flex-end;
 }
 
 .intro__item-title {
@@ -49,7 +53,8 @@
 
   button {
     font-weight: 600;
-    padding: 0 30px;
+    padding: 0;
+    width: 280px;
   }
 
   input {
@@ -60,5 +65,64 @@
     background-color: $white;
     border: 1px solid $feijoa;
     border-radius: 4px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .intro__item-title {
+    font-size: 50px;
+  }
+
+  .intro__item-text {
+    font-size: 16px;
+  }
+
+  .intro__item {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .intro__item {
+    padding-bottom: 70px;
+  }
+
+  .intro__item-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-align: center;
+
+    span {
+      font-size: 29px;
+    }
+  }
+
+  .intro__item-text {
+    margin-bottom: 15px;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .intro__item-form {
+    display: block;
+    margin: 0 auto;
+
+    input {
+      margin: 0 0 10px;
+    }
+  }
+
+  .intro__item {
+    min-height: 590px;
+  }
+
+  .intro .swiper-slide {
+    min-height: 590px;
+  }
+
+  .intro .swiper-container {
+    min-height: 590px;
   }
 }

@@ -1,5 +1,4 @@
 .header {
-  min-height: 70px;
   position: fixed;
   top: 10px;
   left: 0;
@@ -41,6 +40,16 @@
   margin-right: 20px;
 }
 
+.header__action-call-mobile {
+  display: none;
+  font-size: 14px;
+  color: $feijoa;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
 .header__action-call__text {
   margin-left: 10px;
   display: flex;
@@ -71,4 +80,25 @@
   padding: 0 22px;
   height: 40px;
   font-weight: 600;
+}
+
+@media (max-width: 1279px) {
+  .header__action-call {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__action-quote {
+    display: none;
+  }
+
+  .header__action-call-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__inner {
+    padding: 10px 0;
+  }
 }
